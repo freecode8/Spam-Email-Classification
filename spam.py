@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 import numpy as np
-from win32com.client import Dispatch
+#from win32com.client import Dispatch
 
 def speak(text):
     speak=Dispatch(("SAPI.SpVoice"))
