@@ -9,12 +9,12 @@ pipeline {
              }
            stage('Build Image') {
                 steps {
-                sh ' docker build -t EmailClassificationapp:latest .'
+                sh ' docker build -t emailclassificationapp:latest .'
                 }
            }
            stage('Run Image') {
                 steps {
-                sh '  docker run -d -p 8501:8501 --name EmailClassification EmailClassificationapp:latest'
+                sh '  docker run -d -p 8501:8501 --name emailclassification emailclassificationapp:latest'
                 }
            }
            stage('Testing'){
